@@ -56,6 +56,8 @@ check_headers = [
   ['HAVE_TIME_H', 'time.h'],
   ['HAVE_UNISTD_H', 'unistd.h'],
   ['HAVE_VARARGS_H', 'varargs.h'],
+  ['HAVE_WINDOWS_H', 'windows.h'],
+  ['HAVE_SYNCHAPI_H', 'synchapi.h'],
 ]
 
 foreach h : check_headers
@@ -86,6 +88,8 @@ check_functions = [
   ['HAVE_VASPRINTF', 'vasprintf', '#include <stdio.h>'],
   ['HAVE_VA_COPY', 'va-copy', '#include <stdarg.h>'],
   ['HAVE_VSNPRINTF', 'vsnprintf', '#include <stdio.h>'],
+  ['HAVE_INIT_ONCE_BEGIN_INITIALIZE', 'InitOnceBeginInitialize', '#include <windows.h>\n#include <synchapi.h>'],
+  ['HAVE_INIT_ONCE_COMPLETE', 'InitOnceComplete', '#include <windows.h>\n#include <synchapi.h>'],
 ]
 
 foreach f : check_functions

@@ -283,6 +283,18 @@ typedef uint64_t uintmax_t;
 /* Define to 1 if you have the <unistd.h> header file. */
 #mesondefine HAVE_UNISTD_H
 
+/* Define to 1 if you have <windows.h> header file. */
+#mesondefine HAVE_WINDOWS_H
+
+/* Define to 1 if you have <synchapi.h> header file. */
+#mesondefine HAVE_SYNCHAPI_H
+
+/* Define to 1 if you have the `InitOnceBeginInitialize' function. */
+#mesondefine HAVE_INIT_ONCE_BEGIN_INITIALIZE
+
+/* Define to 1 if you have the `InitOnceComplete' function. */
+#mesondefine HAVE_INIT_ONCE_COMPLETE
+
 /* Define to 1 if the system has the type `unsigned long long'. */
 #mesondefine HAVE_UNSIGNED_LONG_LONG
 
